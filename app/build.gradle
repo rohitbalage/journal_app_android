@@ -32,6 +32,11 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    buildFeatures{
+        dataBinding = true
+    }
+
 }
 
 dependencies {
@@ -41,6 +46,10 @@ dependencies {
     // Firebase BOM
     implementation(platform("com.google.firebase:firebase-bom:32.7.3"))
     implementation("com.google.firebase:firebase-analytics")
+
+    // Firebase Authentication
+
+    implementation("com.google.firebase:firebase-auth")
 
 
     // Firebase cloudstore
